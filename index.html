@@ -19,12 +19,12 @@ var marker = document.querySelector("#marker");
 var fullbutton = document.querySelector("#fullscreen");
 var Cube_0 = document.querySelector("#Cube_0");
 marker.addEventListener("markerFound", function (evt) {
+    open("https://www.google.com");
 markerFound = 1;
 });
 marker.addEventListener("markerLost", function (evt) {
 markerFound = 0;
 });
-open("https://www.google.com");
 Cube_0.addEventListener("mousedown", function(evt){
 });
 fullbutton.addEventListener("click", function (evt) {
@@ -108,7 +108,7 @@ function bezierEvaluate(p0, p1, p2, p3, t) {
 <!-- END: Add Image Target (marker) -->
 
 <!-- BEGIN: Unity Compiled Objects -->
-<a-box src="" id="Cube_0" class="intersectable" width="0.1" height="0.1" depth="0.1" position="0 0.115 0" rotation="0 0 0" color="#54FF00" transparent=False
+<a-box src="" id="Cube_0" class="intersectable" width="0.1" height="0.1" depth="0.1" position="0 0.085 0" rotation="0 0 0" color="#54FF00" transparent=False
 ></a-box>
 <!-- END: Unity Compiled Objects -->
 
